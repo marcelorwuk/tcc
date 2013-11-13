@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gameware.tcc2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.gameware.tcc2.TelaLogin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaRegistroLocacao"
+            android:label="@string/title_activity_tela_registro_locacao" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaGerenciarValoresServico"
+            android:label="@string/title_activity_tela_gerenciar_valores_servico" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaMenuGerenteActivity"
+            android:label="@string/title_activity_tela_menu_gerente" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.ConsolesActivity"
+            android:label="@string/title_activity_consoles" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaConsolesActivity"
+            android:label="@string/title_activity_tela_consoles" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaJogoActivity"
+            android:label="@string/title_activity_tela_jogo" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaFinanceiroLojaActivity"
+            android:label="@string/title_activity_tela_financeiro_loja" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaRelatoriosActivity"
+            android:label="@string/title_activity_tela_relatorios" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.CalendarioActivity"
+            android:label="@string/title_activity_calendario" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaFaturamentoPeriodoActivity"
+            android:label="@string/title_activity_tela_faturamento_periodo" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaGerenciarProdutosActivity"
+            android:label="@string/title_activity_tela_produtos" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaCalendarioPeriodoActivity"
+            android:label="@string/title_activity_tela_calendario_periodo" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaGerenciarClienteActivity"
+            android:label="@string/title_activity_tela_gerenciar_cliente" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaDadosCadastraisClienteActivity"
+            android:label="@string/title_activity_tela_dados_cadastrais" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaFichaFinanceiraClienteActivity"
+            android:label="@string/title_activity_tela_ficha_financeira" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaCadastroClienteActivity"
+            android:label="@string/title_activity_tela_cadastro_cliente" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaMenuAdministradorActivity"
+            android:label="@string/title_activity_tela_menu_administrador" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaGerenciarGerenteActivity"
+            android:label="@string/title_activity_tela_gerenciar_gerente" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaDadosCadastraisGerenteActivity"
+            android:label="@string/title_activity_tela_dados_cadastrais_gerente" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaCadastroGerenteActivity"
+            android:label="@string/title_activity_tela_cadastro_gerente" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaRendimentosClienteActivity"
+            android:label="@string/title_activity_tela_rendimentos" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaRendimentosConsoleActivity"
+            android:label="@string/title_activity_tela_rendimentos_console" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaSelecaoClienteFichaFinanceiraActivity"
+            android:label="@string/title_activity_tela_selecao_cliente_ficha_financeira" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaCadastroProduto"
+            android:label="@string/title_activity_tela_cadastro_produto" >
+        </activity>
+        <activity
+            android:name="com.gameware.tcc2.TelaDadosCadastraisProduto"
+            android:label="@string/title_activity_tela_dados_cadastrais_produto" >
+        </activity>
+    </application>
+
+</manifest>

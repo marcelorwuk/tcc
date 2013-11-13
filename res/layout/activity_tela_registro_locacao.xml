@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TelaRegistroLocacao" >
+
+    <Spinner
+        android:id="@+id/seletor_gerente"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/label_cliente"
+        android:prompt="@string/prompt_cliente"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/label_tempo_uso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seletor_jogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/label_tempo_uso"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@+id/label_cliente"
+        android:text="@string/button_ok"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_cliente"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/label_jogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seletor_gerente"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_jogo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/seletor_jogo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/label_jogo"
+        android:prompt="@string/prompt_jogo"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/seletor_hora"
+        android:inputType="number"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/seletor_jogo"
+        android:layout_below="@+id/label_tempo_uso" />
+
+    <TextView
+        android:id="@+id/label_horas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seletor_hora"
+        android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@+id/seletor_hora"
+        android:text="@string/label_horas"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/label_minutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/label_minutos"
+        android:layout_alignBottom="@+id/label_horas"
+        android:layout_toRightOf="@+id/seletor_minuto"
+        android:text="@string/label_minutos"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/seletor_minuto"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/button_ok"
+        android:layout_below="@+id/label_tempo_uso"
+        android:prompt="@string/prompt_minuto"
+        android:textAlignment="textStart" />
+
+</RelativeLayout>

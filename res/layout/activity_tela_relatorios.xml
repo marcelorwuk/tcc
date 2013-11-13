@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TelaRelatoriosActivity" >
+
+    <Button
+        android:id="@+id/button_rel_dia"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_rel_dia"
+        android:onClick="onButtonClick"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_rel_sem"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_rel_dia"
+        android:layout_below="@+id/button_rel_dia"
+        android:text="@string/button_rel_sem"
+        android:onClick="onButtonClick"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_rel_men"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_rel_sem"
+        android:layout_below="@+id/button_rel_sem"
+        android:text="@string/button_rel_men"
+        android:onClick="onButtonClick"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_rel_anu"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_rel_men"
+        android:layout_below="@+id/button_rel_men"
+        android:text="@string/button_rel_anu"
+        android:onClick="onButtonClick"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_rel_per"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_rel_anu"
+        android:layout_below="@+id/button_rel_anu"
+        android:onClick="onButtonClick"
+        android:text="@string/button_rel_per"
+        android:textStyle="bold" />
+
+</RelativeLayout>

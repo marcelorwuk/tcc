@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TelaCadastroClienteActivity" >
+    
+        <EditText
+        android:id="@+id/text_nome_completo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_data_nascimento"
+        android:layout_alignRight="@+id/text_data_nascimento"
+        android:layout_below="@+id/label_nome_completo"
+        android:ems="8"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/label_data_nascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nome_completo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/label_data_nascimento"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/text_data_nascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_data_nascimento"
+        android:layout_centerHorizontal="true"
+        android:ems="8"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/label_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_data_nascimento"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_rg"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/text_rg"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_below="@+id/label_rg"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/label_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_rg"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_telefone"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/text_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_telefone"
+        android:layout_centerHorizontal="true"
+        android:ems="8"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_telefone"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_email"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_email"
+        android:layout_centerHorizontal="true"
+        android:ems="8"
+        android:inputType="textEmailAddress" />
+
+    <CheckBox
+        android:id="@+id/checkBox_sexo_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/label_sexo"
+        android:layout_alignBottom="@+id/label_sexo"
+        android:layout_alignLeft="@+id/label_nome_completo"
+        android:onClick="onButtonClick"
+        android:text="@string/label_sexo_M" />
+
+    <CheckBox
+        android:id="@+id/checkBox_sexo_F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox_sexo_M"
+        android:layout_alignBottom="@+id/checkBox_sexo_M"
+        android:layout_toRightOf="@+id/label_telefone"
+        android:onClick="onButtonClick"
+        android:text="@string/label_sexo_F" />
+
+    <TextView
+        android:id="@+id/label_sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nome_completo"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/label_data_nascimento"
+        android:text="@string/label_sexo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/label_nome_completo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_nome_completo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/button_ok"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/label_email"
+        android:onClick="onButtonClick"
+        android:text="@string/button_ok" />
+
+</RelativeLayout>
